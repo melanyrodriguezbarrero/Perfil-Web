@@ -14,7 +14,7 @@ A public web page with six sections:
 | Section | What goes there |
 |---|---|
 | Home | Melany Rodriguez, Student, your links |
-| About | I study Systems Engineering. I am interested in technology and I enjoy learning new things. In my free time, I like listening to music and watching movies. |
+| About | I study Systems Engineering. I am interested in web development and technology. Now, I want to learn more about programming and improve my skills. |
 | Skills | Your technical and professional skills |
 | Resume | Your education and your experience |
 | Projects | The projects you have built |
