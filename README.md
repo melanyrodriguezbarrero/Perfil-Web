@@ -13,7 +13,7 @@ A public web page with six sections:
 
 | Section | What goes there |
 |---|---|
-| Home | Melany Rodriguez, Student, your links |
+| Home | Melany Rodriguez, Student, mrodriguez99@itfip.edu.co |
 | About | I study Systems Engineering. I am interested in web development and technology. Now, I want to learn more about programming and improve my skills. |
 | Skills | Your technical and professional skills |
 | Resume | Your education and your experience |
