@@ -2,720 +2,800 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Melany Rodriguez · Técnico Profesional en Programación Web</title>
+  <title>Melany Rodriguez · Técnico Profesional en Programación Web</title>
 
-    <meta name="description"
-        content="Estudiante de Técnico Profesional en Programación Web interesada en desarrollo web, bases de datos y tecnología.">
+  <meta name="description"
+    content="Estudiante de Técnico Profesional en Programación Web interesada en tecnología, desarrollo web, bases de datos y aprendizaje continuo.">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ENCABEZADO -->
-    <div class="contenedor-header">
+  <!-- ========================= HEADER ========================= -->
+  <div class="contenedor-header">
 
-        <header>
+    <header>
 
-            <div class="logo">
-                <a href="#inicio">Melany</a>
-            </div>
+      <div class="logo">
+        <a href="#inicio">Melany</a>
+      </div>
 
-            <nav id="nav">
+      <nav id="nav">
 
-                <ul>
+        <ul>
 
-                    <li>
-                        <a href="#inicio" data-i18n="nav.home">INICIO</a>
-                    </li>
+          <li>
+            <a href="#inicio" data-i18n="nav.home" onclick="cerrarMenu()">INICIO</a>
+          </li>
 
-                    <li>
-                        <a href="#sobremi" data-i18n="nav.about">SOBRE MÍ</a>
-                    </li>
+          <li>
+            <a href="#sobremi" data-i18n="nav.about" onclick="cerrarMenu()">SOBRE MÍ</a>
+          </li>
 
-                    <li>
-                        <a href="#skills" data-i18n="nav.skills">HABILIDADES</a>
-                    </li>
+          <li>
+            <a href="#skills" data-i18n="nav.skills" onclick="cerrarMenu()">HABILIDADES</a>
+          </li>
 
-                    <li>
-                        <a href="#curriculum" data-i18n="nav.resume">FORMACIÓN</a>
-                    </li>
+          <li>
+            <a href="#curriculum" data-i18n="nav.resume" onclick="cerrarMenu()">FORMACIÓN</a>
+          </li>
 
-                    <li>
-                        <a href="#portfolio" data-i18n="nav.portfolio">PORTAFOLIO</a>
-                    </li>
+          <li>
+            <a href="#portfolio" data-i18n="nav.portfolio" onclick="cerrarMenu()">PROYECTOS</a>
+          </li>
 
-                    <li>
-                        <a href="#contacto" data-i18n="nav.contact">CONTACTO</a>
-                    </li>
+          <li>
+            <a href="#contacto" data-i18n="nav.contact" onclick="cerrarMenu()">CONTACTO</a>
+          </li>
 
-                </ul>
+        </ul>
 
-            </nav>
+      </nav>
 
-            <button id="btn-idioma">
-                EN
-            </button>
+      <div class="acciones-header">
 
-            <div class="nav-responsive">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+        <button id="btn-idioma"
+          class="btn-idioma"
+          type="button"
+          onclick="cambiarIdioma()"
+          aria-label="Cambiar idioma">
 
-        </header>
+          <span class="idioma-activo">ES</span>
+          <span class="idioma-sep">/</span>
+          <span class="idioma-inactivo">EN</span>
+
+        </button>
+
+        <button class="nav-responsive"
+          type="button"
+          onclick="mostrarOcultarMenu()"
+          aria-label="Menú">
+
+          <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+      </div>
+
+    </header>
+
+  </div>
+
+
+  <!-- ========================= HERO ========================= -->
+
+  <section id="inicio" class="inicio">
+
+    <div class="contenido-banner">
+
+      <div class="contenedor-img">
+
+        <img src="images/profile.jpg"
+          alt="Foto de Melany Rodriguez"
+          onerror="this.style.display='none'">
+
+      </div>
+
+      <h1>Melany Rodriguez</h1>
+
+      <h2 data-i18n="hero.role">
+        Técnico Profesional en Programación Web
+      </h2>
+
+      <div class="redes">
+
+        <a href="#"
+          aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="#"
+          aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="mailto:mrodriguez99@itfip.edu.co"
+          aria-label="Correo electrónico">
+
+          <i class="fa-solid fa-envelope"></i>
+
+        </a>
+
+      </div>
 
     </div>
 
+  </section>
 
-    <!-- INICIO -->
-    <section id="inicio" class="inicio">
 
-        <div class="contenido-banner">
+  <!-- ========================= ABOUT ========================= -->
 
-            <div class="contenedor-img">
-                <img src="images/profile.jpg" alt="Foto de Melany Rodriguez"
-                    onerror="this.style.opacity='0'">
-            </div>
+  <section id="sobremi" class="sobremi">
 
-            <h1>Melany Rodriguez</h1>
+    <div class="contenido-seccion">
 
-            <h2 data-i18n="hero.role">
-                Técnico Profesional en Programación Web · Desarrollo Web
-            </h2>
+      <h2 data-i18n="about.title">
+        Sobre Mí
+      </h2>
 
-            <div class="redes">
+      <p data-i18n="about.text">
+        Soy estudiante de Técnico Profesional en Programación Web y actualmente
+        curso cuarto semestre en UniEspinal. Me considero una persona responsable,
+        comprometida y con interés por seguir aprendiendo sobre tecnología y
+        desarrollo web. Me gusta aprender mediante la práctica y mejorar mis
+        conocimientos a través de las actividades y experiencias de mi formación.
+      </p>
 
-                <a href="#" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+      <div class="fila">
 
-                <a href="#" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
+        <div class="col">
 
-                <a href="mailto:mrodriguez99@itfip.edu.co"
-                    aria-label="Correo electrónico">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
+          <h3 data-i18n="about.infoTitle">
+            Información
+          </h3>
 
-            </div>
+          <ul class="datos">
+
+            <li>
+
+              <strong data-i18n="about.labelLocation">
+                Ubicación
+              </strong>
+
+              <span data-i18n="about.valueLocation">
+                Espinal, Tolima, Colombia
+              </span>
+
+            </li>
+
+            <li>
+
+              <strong data-i18n="about.labelEmail">
+                Correo
+              </strong>
+
+              <span>
+                mrodriguez99@itfip.edu.co
+              </span>
+
+            </li>
+
+            <li>
+
+              <strong data-i18n="about.labelLanguages">
+                Idiomas
+              </strong>
+
+              <span data-i18n="about.valueLanguages">
+                Español (nativo) · Inglés (en formación)
+              </span>
+
+            </li>
+
+            <li>
+
+              <strong data-i18n="about.labelStatus">
+                Disponibilidad
+              </strong>
+
+              <span class="destacado" data-i18n="about.valueStatus">
+                Disponible para prácticas
+              </span>
+
+            </li>
+
+          </ul>
 
         </div>
 
-    </section>
+
+        <div class="col">
+
+          <h3 data-i18n="about.interestsTitle">
+            Intereses
+          </h3>
+
+          <div class="contenedor-intereses">
+
+            <div class="interes">
+
+              <i class="fa-solid fa-code"></i>
+
+              <span data-i18n="interest.1">
+                PROGRAMACIÓN
+              </span>
+
+            </div>
+
+            <div class="interes">
+
+              <i class="fa-solid fa-laptop-code"></i>
+
+              <span data-i18n="interest.2">
+                DESARROLLO WEB
+              </span>
+
+            </div>
+
+            <div class="interes">
+
+              <i class="fa-solid fa-database"></i>
+
+              <span data-i18n="interest.3">
+                BASES DE DATOS
+              </span>
+
+            </div>
+
+            <div class="interes">
+
+              <i class="fa-solid fa-book-open"></i>
+
+              <span data-i18n="interest.4">
+                APRENDIZAJE
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
 
 
-    <!-- SOBRE MÍ -->
-    <section id="sobremi" class="sobremi">
+  <!-- ========================= SKILLS ========================= -->
 
-        <div class="contenido-seccion">
+  <section id="skills" class="skills">
 
-            <h2 data-i18n="about.title">
-                Sobre Mí
-            </h2>
+    <div class="contenido-seccion">
 
-            <p data-i18n="about.text">
-                Soy estudiante de Técnico Profesional en Programación Web en UniEspinal y actualmente curso cuarto semestre.
-                Me interesa el desarrollo web, las bases de datos y la creación de soluciones tecnológicas mediante proyectos académicos.
+      <h2 data-i18n="skills.title">
+        Habilidades
+      </h2>
+
+      <div class="fila">
+
+
+        <!-- HABILIDADES TÉCNICAS -->
+
+        <div class="col">
+
+          <h3 data-i18n="skills.technical">
+            Habilidades técnicas
+          </h3>
+
+
+          <div class="skill">
+
+            <span class="skill-nombre">
+              HTML &amp; CSS
+            </span>
+
+            <div class="barra-skill">
+
+              <div class="progreso" data-percent="80">
+                <span>80%</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <span class="skill-nombre">
+              JavaScript
+            </span>
+
+            <div class="barra-skill">
+
+              <div class="progreso" data-percent="65">
+                <span>65%</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <span class="skill-nombre">
+              PHP
+            </span>
+
+            <div class="barra-skill">
+
+              <div class="progreso" data-percent="70">
+                <span>70%</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <span class="skill-nombre">
+              MySQL
+            </span>
+
+            <div class="barra-skill">
+
+              <div class="progreso" data-percent="70">
+                <span>70%</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- HABILIDADES PROFESIONALES -->
+
+        <div class="col">
+
+          <h3 data-i18n="skills.professional">
+            Habilidades profesionales
+          </h3>
+
+
+          <div class="skill">
+
+            <span class="skill-nombre" data-i18n="skill.support">
+              Comunicación
+            </span>
+
+            <div class="barra-skill">
+
+              <div class="progreso" data-percent="80">
+                <span>80%</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <span class="skill-nombre" data-i18n="skill.teamwork">
+              Trabajo en equipo
+            </span>
+
+            <div class="barra-skill">
+
+              <div class="progreso" data-percent="85">
+                <span>85%</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <span class="skill-nombre" data-i18n="skill.problem">
+              Resolución de problemas
+            </span>
+
+            <div class="barra-skill">
+
+              <div class="progreso" data-percent="80">
+                <span>80%</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <span class="skill-nombre" data-i18n="skill.english">
+              Aprendizaje continuo
+            </span>
+
+            <div class="barra-skill">
+
+              <div class="progreso" data-percent="85">
+                <span>85%</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================= RESUME ========================= -->
+
+  <section id="curriculum" class="curriculum">
+
+    <div class="contenido-seccion">
+
+      <h2 data-i18n="resume.title">
+        Formación y experiencia
+      </h2>
+
+      <div class="fila">
+
+
+        <!-- FORMACIÓN -->
+
+        <div class="col izquierda">
+
+          <h3 data-i18n="resume.education">
+            Formación
+          </h3>
+
+
+          <div class="item izq">
+
+            <h4 data-i18n="edu.1.title">
+              Técnico Profesional en Programación Web
+            </h4>
+
+            <span class="casa">
+              Institución Universitaria de El Espinal - UniEspinal
+            </span>
+
+            <span class="fecha">
+              Cuarto semestre · En curso
+            </span>
+
+            <p data-i18n="edu.1.text">
+              Formación en programación, desarrollo web, bases de datos,
+              programación orientada a objetos, diseño de interfaces y
+              herramientas tecnológicas. Durante la carrera he desarrollado
+              diferentes actividades prácticas para fortalecer mis conocimientos.
             </p>
 
-            <div class="fila">
-
-                <!-- DATOS PERSONALES -->
-                <div class="col">
-
-                    <h3 data-i18n="about.infoTitle">
-                        Información
-                    </h3>
-
-                    <ul>
-
-                        <li>
-                            <strong data-i18n="about.labelLocation">
-                                Ubicación
-                            </strong>
-
-                            <span data-i18n="about.valueLocation">
-                                Espinal, Tolima, Colombia
-                            </span>
-                        </li>
-
-                        <li>
-                            <strong data-i18n="about.labelEmail">
-                                Email
-                            </strong>
-
-                            <span>
-                                mrodriguez99@itfip.edu.co
-                            </span>
-                        </li>
-
-                        <li>
-                            <strong data-i18n="about.labelLanguages">
-                                Idiomas
-                            </strong>
-
-                            <span data-i18n="about.valueLanguages">
-                                Español (nativo) · Inglés (en formación)
-                            </span>
-                        </li>
-
-                        <li>
-                            <strong data-i18n="about.labelStatus">
-                                Disponibilidad
-                            </strong>
-
-                            <span data-i18n="about.valueStatus">
-                                Disponible para prácticas
-                            </span>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <!-- INTERESES -->
-                <div class="col">
-
-                    <h3 data-i18n="about.interestsTitle">
-                        Intereses
-                    </h3>
-
-                    <div class="contenedor-intereses">
-
-                        <div class="interes">
-                            <i class="fa-solid fa-code"></i>
-                            <span data-i18n="interest.1">
-                                PROGRAMACIÓN
-                            </span>
-                        </div>
-
-                        <div class="interes">
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <span data-i18n="interest.2">
-                                DESARROLLO WEB
-                            </span>
-                        </div>
-
-                        <div class="interes">
-                            <i class="fa-solid fa-database"></i>
-                            <span data-i18n="interest.3">
-                                BASES DE DATOS
-                            </span>
-                        </div>
-
-                        <div class="interes">
-                            <i class="fa-solid fa-microchip"></i>
-                            <span data-i18n="interest.4">
-                                TECNOLOGÍA
-                            </span>
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="conectori">
+              <div class="circuloi"></div>
             </div>
 
-        </div>
+          </div>
 
-    </section>
 
+          <div class="item izq">
 
-    <!-- HABILIDADES -->
-    <section class="skills" id="skills">
+            <h4 data-i18n="edu.2.title">
+              Formación práctica en tecnología
+            </h4>
 
-        <div class="contenido-seccion">
+            <span class="casa">
+              Proyectos y actividades académicas
+            </span>
 
-            <h2 data-i18n="skills.title">
-                Habilidades
-            </h2>
+            <span class="fecha">
+              Formación actual
+            </span>
 
-            <div class="fila">
-
-                <!-- HABILIDADES TÉCNICAS -->
-                <div class="col">
-
-                    <h3 data-i18n="skills.technical">
-                        Habilidades técnicas
-                    </h3>
-
-                    <div class="skill">
-
-                        <span>HTML & CSS</span>
-
-                        <div class="barra-skill">
-
-                            <div class="progreso" data-percent="80">
-                                <span>80%</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill">
-
-                        <span>JavaScript</span>
-
-                        <div class="barra-skill">
-
-                            <div class="progreso" data-percent="65">
-                                <span>65%</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill">
-
-                        <span>PHP</span>
-
-                        <div class="barra-skill">
-
-                            <div class="progreso" data-percent="70">
-                                <span>70%</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill">
-
-                        <span>MySQL</span>
-
-                        <div class="barra-skill">
-
-                            <div class="progreso" data-percent="70">
-                                <span>70%</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- HABILIDADES PROFESIONALES -->
-                <div class="col">
-
-                    <h3 data-i18n="skills.professional">
-                        Habilidades profesionales
-                    </h3>
-
-                    <div class="skill">
-
-                        <span data-i18n="skill.support">
-                            Comunicación
-                        </span>
-
-                        <div class="barra-skill">
-
-                            <div class="progreso" data-percent="80">
-                                <span>80%</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill">
-
-                        <span data-i18n="skill.teamwork">
-                            Trabajo en equipo
-                        </span>
-
-                        <div class="barra-skill">
-
-                            <div class="progreso" data-percent="85">
-                                <span>85%</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill">
-
-                        <span data-i18n="skill.problem">
-                            Resolución de problemas
-                        </span>
-
-                        <div class="barra-skill">
-
-                            <div class="progreso" data-percent="80">
-                                <span>80%</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill">
-
-                        <span data-i18n="skill.english">
-                            Aprendizaje continuo
-                        </span>
-
-                        <div class="barra-skill">
-
-                            <div class="progreso" data-percent="85">
-                                <span>85%</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FORMACIÓN Y PROYECTOS -->
-    <section id="curriculum" class="curriculum">
-
-        <div class="contenido-seccion">
-
-            <h2 data-i18n="resume.title">
-                Formación y proyectos
-            </h2>
-
-            <div class="fila">
-
-                <!-- EDUCACIÓN -->
-                <div class="col izquierda">
-
-                    <h3 data-i18n="resume.education">
-                        Formación académica
-                    </h3>
-
-
-                    <div class="item izq">
-
-                        <h4 data-i18n="edu.1.title">
-                            Técnico Profesional en Programación Web
-                        </h4>
-
-                        <span class="casa">
-                            Institución Universitaria de El Espinal - UniEspinal
-                        </span>
-
-                        <span class="fecha">
-                            4.º semestre · En curso
-                        </span>
-
-                        <p data-i18n="edu.1.text">
-                            Formación en desarrollo web, programación, bases de datos,
-                            programación orientada a objetos y herramientas de desarrollo.
-                            Actualmente curso cuarto semestre en UniEspinal.
-                        </p>
-
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="item izq">
-
-                        <h4 data-i18n="edu.2.title">
-                            Formación complementaria en desarrollo y tecnología
-                        </h4>
-
-                        <span class="casa">
-                            Proyectos y prácticas académicas
-                        </span>
-
-                        <span class="fecha">
-                            Formación actual
-                        </span>
-
-                        <p data-i18n="edu.2.text">
-                            Práctica académica en Java Swing, PHP, MySQL, Git/GitHub
-                            y fundamentos de redes con Cisco Packet Tracer.
-                        </p>
-
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROYECTOS / EXPERIENCIA -->
-                <div class="col derecha">
-
-                    <h3 data-i18n="resume.experience">
-                        Proyectos académicos
-                    </h3>
-
-
-                    <div class="item der">
-
-                        <h4 data-i18n="exp.1.title">
-                            Desarrollo de proyectos académicos
-                        </h4>
-
-                        <span class="casa">
-                            Programación Web y Java
-                        </span>
-
-                        <span class="fecha">
-                            Formación universitaria
-                        </span>
-
-                        <p data-i18n="exp.1.text">
-                            Desarrollé aplicaciones web y de escritorio usando PHP,
-                            MySQL, HTML, CSS, JavaScript y Java Swing, aplicando
-                            validaciones, estructuras de programación y orientación a objetos.
-                        </p>
-
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="item der">
-
-                        <h4 data-i18n="exp.2.title">
-                            Prácticas de bases de datos y redes
-                        </h4>
-
-                        <span class="casa">
-                            MySQL y Cisco Packet Tracer
-                        </span>
-
-                        <span class="fecha">
-                            Formación universitaria
-                        </span>
-
-                        <p data-i18n="exp.2.text">
-                            Diseñé y probé bases de datos en MySQL y realicé prácticas
-                            de direccionamiento, subnetting y enrutamiento estático
-                            en Cisco Packet Tracer.
-                        </p>
-
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PORTAFOLIO -->
-    <section id="portfolio" class="portfolio">
-
-        <div class="contenido-seccion">
-
-            <h2 data-i18n="portfolio.title">
-                Portafolio
-            </h2>
-
-            <div class="galeria">
-
-
-                <!-- PROYECTO 1 -->
-                <div class="proyecto">
-
-                    <img src="images/p1.jpg"
-                        alt="Sistema Web de Notas y Asistencias"
-                        onerror="this.style.opacity='0'">
-
-                    <div class="overlay">
-
-                        <h3 data-i18n="project.1.title">
-                            Sistema Web de Notas y Asistencias
-                        </h3>
-
-                        <p data-i18n="project.1.text">
-                            PHP · MySQL · HTML · CSS · JavaScript · XP
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROYECTO 2 -->
-                <div class="proyecto">
-
-                    <img src="images/p2.jpg"
-                        alt="Proyecto de Figuras Geométricas"
-                        onerror="this.style.opacity='0'">
-
-                    <div class="overlay">
-
-                        <h3 data-i18n="project.2.title">
-                            Figuras Geométricas
-                        </h3>
-
-                        <p data-i18n="project.2.text">
-                            PHP · POO · Herencia · Polimorfismo · Encapsulamiento
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROYECTO 3 -->
-                <div class="proyecto">
-
-                    <img src="images/p3.jpg"
-                        alt="Aplicaciones Java Swing"
-                        onerror="this.style.opacity='0'">
-
-                    <div class="overlay">
-
-                        <h3 data-i18n="project.3.title">
-                            Aplicaciones Java Swing
-                        </h3>
-
-                        <p data-i18n="project.3.text">
-                            Java · Swing · Eclipse · Interfaces gráficas · Validaciones
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="contacto">
-
-        <div class="contenido-seccion">
-
-            <h2 data-i18n="contact.title">
-                Contacto
-            </h2>
-
-            <p data-i18n="contact.intro">
-                Si quieres conocer más sobre mis proyectos académicos o mi formación
-                en programación web, puedes escribirme.
+            <p data-i18n="edu.2.text">
+              He fortalecido mis conocimientos mediante prácticas de programación
+              en Java, PHP, HTML, CSS y JavaScript, además del manejo de bases de
+              datos MySQL y herramientas como Eclipse y GitHub.
             </p>
 
-            <div class="fila">
-
-
-                <!-- EMAIL -->
-                <div class="col">
-
-                    <div class="contacto-card">
-
-                        <i class="fa-solid fa-envelope"></i>
-
-                        <h3 data-i18n="contact.emailLabel">
-                            Email
-                        </h3>
-
-                        <a href="mailto:mrodriguez99@itfip.edu.co">
-                            mrodriguez99@itfip.edu.co
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- GITHUB -->
-                <div class="col">
-
-                    <div class="contacto-card">
-
-                        <i class="fa-brands fa-github"></i>
-
-                        <h3>
-                            GitHub
-                        </h3>
-
-                        <a href="#">
-                            Perfil de GitHub
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- LINKEDIN -->
-                <div class="col">
-
-                    <div class="contacto-card">
-
-                        <i class="fa-brands fa-linkedin"></i>
-
-                        <h3>
-                            LinkedIn
-                        </h3>
-
-                        <a href="#" data-i18n="contact.linkedinValue">
-                            Perfil profesional
-                        </a>
-
-                    </div>
-
-                </div>
-
+            <div class="conectori">
+              <div class="circuloi"></div>
             </div>
 
+          </div>
+
         </div>
 
-    </section>
+
+        <!-- EXPERIENCIA -->
+
+        <div class="col derecha">
+
+          <h3 data-i18n="resume.experience">
+            Experiencia
+          </h3>
 
 
-    <!-- FOOTER -->
-    <footer>
+          <div class="item der">
 
-        <div class="footer-nota" data-i18n="footer.note">
-            Melany Rodriguez · Técnico Profesional en Programación Web · UniEspinal
+            <h4 data-i18n="exp.1.title">
+              Experiencia académica en programación
+            </h4>
+
+            <span class="casa">
+              Formación universitaria
+            </span>
+
+            <span class="fecha">
+              Actualmente
+            </span>
+
+            <p data-i18n="exp.1.text">
+              Durante mi formación he realizado diferentes ejercicios y proyectos
+              académicos relacionados con programación, desarrollo web y bases de
+              datos. Estas actividades me han permitido practicar la lógica,
+              trabajar con diferentes herramientas y aprender de los errores.
+            </p>
+
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+
+          </div>
+
+
+          <div class="item der">
+
+            <h4 data-i18n="exp.2.title">
+              Práctica con herramientas tecnológicas
+            </h4>
+
+            <span class="casa">
+              Proyectos académicos
+            </span>
+
+            <span class="fecha">
+              Formación actual
+            </span>
+
+            <p data-i18n="exp.2.text">
+              He trabajado con diferentes herramientas de desarrollo y tecnología,
+              incluyendo Eclipse, MySQL, GitHub y Cisco Packet Tracer. También he
+              realizado prácticas de interfaces gráficas, bases de datos, redes y
+              programación orientada a objetos.
+            </p>
+
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+
+          </div>
+
         </div>
 
-    </footer>
+      </div>
+
+    </div>
+
+  </section>
 
 
-    <script src="script.js"></script>
+  <!-- ========================= PORTFOLIO ========================= -->
+
+  <section id="portfolio" class="portfolio">
+
+    <div class="contenido-seccion">
+
+      <h2 data-i18n="portfolio.title">
+        Proyectos
+      </h2>
+
+      <div class="galeria">
+
+
+        <a class="proyecto"
+          href="#"
+          target="_blank"
+          rel="noopener">
+
+          <img src="images/project-1.png"
+            alt="Sistema web de notas y asistencias"
+            onerror="this.style.opacity=0">
+
+          <div class="overlay">
+
+            <h3 data-i18n="project.1.title">
+              Sistema Web de Notas y Asistencias
+            </h3>
+
+            <p data-i18n="project.1.text">
+              PHP · MySQL · HTML · CSS · JavaScript
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a class="proyecto"
+          href="#"
+          target="_blank"
+          rel="noopener">
+
+          <img src="images/project-2.png"
+            alt="Aplicación de figuras geométricas"
+            onerror="this.style.opacity=0">
+
+          <div class="overlay">
+
+            <h3 data-i18n="project.2.title">
+              Figuras Geométricas
+            </h3>
+
+            <p data-i18n="project.2.text">
+              PHP · Programación Orientada a Objetos
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a class="proyecto"
+          href="#"
+          target="_blank"
+          rel="noopener">
+
+          <img src="images/project-3.png"
+            alt="Aplicaciones Java Swing"
+            onerror="this.style.opacity=0">
+
+          <div class="overlay">
+
+            <h3 data-i18n="project.3.title">
+              Aplicaciones Java Swing
+            </h3>
+
+            <p data-i18n="project.3.text">
+              Java · Eclipse · Interfaces gráficas
+            </p>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================= CONTACT ========================= -->
+
+  <section id="contacto" class="contacto">
+
+    <div class="contenido-seccion">
+
+      <h2 data-i18n="contact.title">
+        Contacto
+      </h2>
+
+      <p class="contacto-intro" data-i18n="contact.intro">
+        Si quieres conocer más sobre mi formación, mis intereses o los proyectos
+        que he realizado durante mi carrera, puedes comunicarte conmigo a través
+        de mi correo electrónico.
+      </p>
+
+
+      <div class="tarjetas-contacto">
+
+
+        <a class="tarjeta"
+          href="mailto:mrodriguez99@itfip.edu.co">
+
+          <i class="fa-solid fa-envelope"></i>
+
+          <strong data-i18n="contact.emailLabel">
+            Correo
+          </strong>
+
+          <span>
+            mrodriguez99@itfip.edu.co
+          </span>
+
+        </a>
+
+
+        <a class="tarjeta"
+          href="#"
+          target="_blank"
+          rel="noopener">
+
+          <i class="fa-brands fa-github"></i>
+
+          <strong>
+            GitHub
+          </strong>
+
+          <span>
+            Perfil de GitHub
+          </span>
+
+        </a>
+
+
+        <a class="tarjeta"
+          href="#"
+          target="_blank"
+          rel="noopener">
+
+          <i class="fa-brands fa-linkedin-in"></i>
+
+          <strong>
+            LinkedIn
+          </strong>
+
+          <span data-i18n="contact.linkedinValue">
+            Perfil profesional
+          </span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================= FOOTER ========================= -->
+
+  <footer>
+
+    <a href="#inicio"
+      class="arriba"
+      aria-label="Volver al inicio">
+
+      <i class="fa-solid fa-angles-up"></i>
+
+    </a>
+
+    <p class="footer-nota" data-i18n="footer.note">
+      Melany Rodriguez · Técnico Profesional en Programación Web · UniEspinal
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
 
 </body>
 
