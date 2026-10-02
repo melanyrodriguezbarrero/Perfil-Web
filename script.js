@@ -1,14 +1,21 @@
-```javascript
 /* ============================================================
-   WEB PROFILE - MELANY RODRIGUEZ
+   WEB PROFILE TEMPLATE - SCRIPT
    UniEspinal · Técnico Profesional en Programación Web
+
+   THIS IS THE FILE YOU WILL WORK ON THE MOST.
+
+   Below there are two dictionaries: ES and EN.
+   They have exactly the same keys, but different texts.
+
+   IMPORTANT: the English version is NOT a translation of the
+   Spanish version. A professional profile in English follows
+   different rules. Read NOTES.md before you write it.
    ============================================================ */
 
 
 /* ------------------------------------------------------------
    1. SPANISH TEXTS
    ------------------------------------------------------------ */
-
 const ES = {
   "nav.home":      "INICIO",
   "nav.about":     "SOBRE MÍ",
@@ -17,29 +24,29 @@ const ES = {
   "nav.portfolio": "PROYECTOS",
   "nav.contact":   "CONTACTO",
 
-  "hero.role": "Técnico Profesional en Programación Web",
+  "hero.role": "Desarrollador Web · Soporte Técnico",
 
   "about.title":          "Sobre Mí",
-  "about.text":           "Soy Melany Rodriguez, estudiante del programa Técnico Profesional en Programación Web en UniEspinal. Me interesa la programación, el desarrollo web, las bases de datos y la tecnología. Durante mi formación he desarrollado diferentes proyectos académicos y he aprendido a utilizar distintas herramientas de programación.",
+  "about.text":           "[Escribe aquí dos o tres frases sobre ti: qué estudias, qué te interesa dentro del desarrollo web y qué estás buscando ahora.]",
   "about.infoTitle":      "Información",
   "about.labelLocation":  "Ubicación",
-  "about.valueLocation": "Espinal, Tolima, Colombia",
+  "about.valueLocation":  "[Ciudad], Colombia",
   "about.labelEmail":     "Correo",
   "about.labelLanguages": "Idiomas",
-  "about.valueLanguages": "Español (nativo) · Inglés (básico - intermedio)",
+  "about.valueLanguages": "Español (nativo) · Inglés ([tu nivel])",
   "about.labelStatus":    "Disponibilidad",
-  "about.valueStatus":    "Disponible para prácticas",
+  "about.valueStatus":    "Abierto a prácticas",
   "about.interestsTitle": "Intereses",
 
-  "interest.1": "PROGRAMACIÓN",
-  "interest.2": "DESARROLLO WEB",
-  "interest.3": "BASES DE DATOS",
-  "interest.4": "TECNOLOGÍA",
+  "interest.1": "CÓDIGO",
+  "interest.2": "SOPORTE",
+  "interest.3": "LECTURA",
+  "interest.4": "JUEGOS",
 
   "skills.title":        "Habilidades",
   "skills.technical":    "Habilidades técnicas",
   "skills.professional": "Habilidades profesionales",
-  "skill.support":       "Desarrollo Web",
+  "skill.support":       "Soporte al usuario",
   "skill.teamwork":      "Trabajo en equipo",
   "skill.problem":       "Resolución de problemas",
   "skill.english":       "Inglés técnico",
@@ -49,114 +56,109 @@ const ES = {
   "resume.experience": "Experiencia",
 
   "edu.1.title": "Técnico Profesional en Programación Web",
-  "edu.1.text":  "Actualmente curso cuarto semestre del programa Técnico Profesional en Programación Web en UniEspinal. Durante mi formación he aprendido desarrollo web, programación, bases de datos y diferentes herramientas para crear aplicaciones web.",
+  "edu.1.text":  "[Una o dos frases sobre lo que estás aprendiendo y qué sabes hacer ahora.]",
+  "edu.2.title": "[Curso o certificación]",
+  "edu.2.text":  "[Qué aprendiste y para qué te sirve.]",
 
-  "edu.2.title": "Desarrollo de proyectos web",
-  "edu.2.text":  "He desarrollado proyectos académicos utilizando HTML, CSS, JavaScript, PHP y MySQL, aplicando los conocimientos adquiridos durante mi formación.",
-
-  "exp.1.title": "Proyectos académicos",
-  "exp.1.text": "He trabajado en diferentes proyectos relacionados con programación, desarrollo web y bases de datos, aplicando herramientas como HTML, CSS, JavaScript, PHP y MySQL.",
-
-  "exp.2.title": "Aplicaciones y programación",
-  "exp.2.text": "También he realizado aplicaciones utilizando programación orientada a objetos y Java, trabajando con formularios, interfaces gráficas, eventos y cálculos.",
+  "exp.1.title": "[Rol o tipo de proyecto]",
+  "exp.1.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
+  "exp.2.title": "[Rol o tipo de proyecto]",
+  "exp.2.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
 
   "portfolio.title": "Proyectos",
-
-  "project.1.title": "Sistema Web de Notas y Asistencias",
-  "project.1.text":  "Sistema web académico desarrollado para gestionar notas y asistencias utilizando PHP, MySQL, HTML, CSS y JavaScript.",
-
-  "project.2.title": "Figuras Geométricas",
-  "project.2.text":  "Aplicación desarrollada en PHP utilizando programación orientada a objetos para calcular áreas, perímetros y volúmenes de diferentes figuras geométricas.",
-
-  "project.3.title": "Aplicaciones Java",
-  "project.3.text":  "Aplicaciones desarrolladas en Java utilizando Swing y Eclipse, trabajando con formularios, botones, eventos, cálculos y validación de información.",
+  "project.1.title": "[Nombre del proyecto]",
+  "project.1.text":  "[Tecnologías usadas]",
+  "project.2.title": "[Nombre del proyecto]",
+  "project.2.text":  "[Tecnologías usadas]",
+  "project.3.title": "[Nombre del proyecto]",
+  "project.3.text":  "[Tecnologías usadas]",
 
   "contact.title":         "Contacto",
-  "contact.intro":         "Si deseas conocer más sobre mis proyectos o mi formación como Técnico Profesional en Programación Web, puedes escribirme por medio de mi correo electrónico.",
+  "contact.intro":         "[Una frase invitando a escribirte. Por ejemplo: ¿Tienes un proyecto o una vacante? Escríbeme.]",
   "contact.emailLabel":    "Correo",
-  "contact.linkedinValue": "Perfil profesional",
+  "contact.linkedinValue": "[Tu perfil profesional]",
 
-  "footer.note": "Melany Rodriguez · Técnico Profesional en Programación Web · UniEspinal"
+  "footer.note": "[Tu nombre] · Técnico Profesional en Programación Web · UniEspinal"
 };
 
 
 /* ------------------------------------------------------------
    2. ENGLISH TEXTS
-   ------------------------------------------------------------ */
 
+   Before writing this section, remember:
+   - Use action verbs: built, configured, fixed, tested, supported.
+   - Do not include age, marital status or a home address.
+   - Do not translate word by word. Rewrite.
+   ------------------------------------------------------------ */
 const EN = {
   "nav.home":      "HOME",
   "nav.about":     "ABOUT",
   "nav.skills":    "SKILLS",
-  "nav.resume":    "EDUCATION",
+  "nav.resume":    "RESUME",
   "nav.portfolio": "PROJECTS",
   "nav.contact":   "CONTACT",
 
-  "hero.role": "Professional Technician in Web Programming",
+  "hero.role": "Web Developer · Technical Support",
 
   "about.title":          "About Me",
-  "about.text":           "I am Melany Rodriguez, a student of the Professional Technician in Web Programming program at UniEspinal. I am interested in programming, web development, databases and technology. During my studies, I have developed academic projects and learned to use different programming tools.",
+  "about.text":           "[Write two or three sentences about yourself: what you study, what interests you in web development, and what you are looking for now.]",
   "about.infoTitle":      "Information",
   "about.labelLocation":  "Location",
-  "about.valueLocation": "Espinal, Tolima, Colombia",
+  "about.valueLocation":  "[City], Colombia",
   "about.labelEmail":     "Email",
   "about.labelLanguages": "Languages",
-  "about.valueLanguages": "Spanish (native) · English (basic - intermediate)",
+  "about.valueLanguages": "Spanish (native) · English ([your level])",
   "about.labelStatus":    "Availability",
-  "about.valueStatus":    "Available for internships",
+  "about.valueStatus":    "Open to internships",
   "about.interestsTitle": "Interests",
 
-  "interest.1": "PROGRAMMING",
-  "interest.2": "WEB DEVELOPMENT",
-  "interest.3": "DATABASES",
-  "interest.4": "TECHNOLOGY",
+  "interest.1": "CODE",
+  "interest.2": "SUPPORT",
+  "interest.3": "READING",
+  "interest.4": "GAMING",
 
   "skills.title":        "Skills",
-  "skills.technical":    "Technical Skills",
-  "skills.professional": "Professional Skills",
-  "skill.support":       "Web Development",
+  "skills.technical":    "Technical skills",
+  "skills.professional": "Professional skills",
+  "skill.support":       "User support",
   "skill.teamwork":      "Teamwork",
-  "skill.problem":       "Problem Solving",
+  "skill.problem":       "Problem solving",
   "skill.english":       "Technical English",
 
-  "resume.title":      "Education and Experience",
+  "resume.title":      "Education and experience",
   "resume.education":  "Education",
   "resume.experience": "Experience",
 
   "edu.1.title": "Professional Technician in Web Programming",
-  "edu.1.text":  "I am currently in my fourth semester of the Professional Technician in Web Programming program at UniEspinal. During my studies, I have learned web development, programming, databases and different tools for creating web applications.",
+  "edu.1.text":  "[One or two sentences about what you are learning and what you can do now.]",
+  "edu.2.title": "[Course or certificate]",
+  "edu.2.text":  "[What you learned and how you use it.]",
 
-  "edu.2.title": "Web Development Projects",
-  "edu.2.text":  "I have developed academic projects using HTML, CSS, JavaScript, PHP and MySQL, applying the knowledge acquired during my studies.",
-
-  "exp.1.title": "Academic Projects",
-  "exp.1.text": "I have worked on different projects related to programming, web development and databases, using tools such as HTML, CSS, JavaScript, PHP and MySQL.",
-
-  "exp.2.title": "Applications and Programming",
-  "exp.2.text": "I have also developed applications using object-oriented programming and Java, working with forms, graphical interfaces, events and calculations.",
+  "exp.1.title": "[Role or type of project]",
+  "exp.1.text":  "[What you did, which tools you used, and what the result was.]",
+  "exp.2.title": "[Role or type of project]",
+  "exp.2.text":  "[What you did, which tools you used, and what the result was.]",
 
   "portfolio.title": "Projects",
-
-  "project.1.title": "Grades and Attendance Web System",
-  "project.1.text":  "Academic web system developed to manage grades and attendance using PHP, MySQL, HTML, CSS and JavaScript.",
-
-  "project.2.title": "Geometric Figures",
-  "project.2.text":  "Application developed in PHP using object-oriented programming to calculate areas, perimeters and volumes of different geometric figures.",
-
-  "project.3.title": "Java Applications",
-  "project.3.text":  "Applications developed in Java using Swing and Eclipse, working with forms, buttons, events, calculations and information validation.",
+  "project.1.title": "[Project name]",
+  "project.1.text":  "[Technologies used]",
+  "project.2.title": "[Project name]",
+  "project.2.text":  "[Technologies used]",
+  "project.3.title": "[Project name]",
+  "project.3.text":  "[Technologies used]",
 
   "contact.title":         "Contact",
-  "contact.intro":         "If you would like to know more about my projects or my training as a Professional Technician in Web Programming, you can contact me by email.",
+  "contact.intro":         "[One sentence inviting people to write to you. Example: Have a project or a vacancy? Send me a message.]",
   "contact.emailLabel":    "Email",
-  "contact.linkedinValue": "Professional profile",
+  "contact.linkedinValue": "[Your professional profile]",
 
-  "footer.note": "Melany Rodriguez · Professional Technician in Web Programming · UniEspinal"
+  "footer.note": "[Your name] · Professional Technician in Web Programming · UniEspinal"
 };
 
 
 /* ============================================================
    3. LANGUAGE SWITCHER
+   You do not need to change the code below.
    ============================================================ */
 
 const DICCIONARIOS = { es: ES, en: EN };
@@ -168,7 +170,6 @@ function aplicarIdioma(idioma) {
 
   document.querySelectorAll("[data-i18n]").forEach(elemento => {
     const clave = elemento.getAttribute("data-i18n");
-
     if (textos[clave] !== undefined) {
       elemento.textContent = textos[clave];
     } else {
@@ -179,22 +180,21 @@ function aplicarIdioma(idioma) {
   document.documentElement.lang = idioma;
 
   const boton = document.getElementById("btn-idioma");
-
   if (boton) {
     const otro = idioma === "es" ? "en" : "es";
-
     boton.innerHTML =
       '<span class="idioma-activo">'   + idioma.toUpperCase() + '</span>' +
       '<span class="idioma-sep">/</span>' +
       '<span class="idioma-inactivo">' + otro.toUpperCase()   + '</span>';
-
-    boton.setAttribute(
-      "aria-label",
-      idioma === "es" ? "Switch to English" : "Cambiar a español"
-    );
+    boton.setAttribute("aria-label",
+      idioma === "es" ? "Switch to English" : "Cambiar a español");
   }
 
   idiomaActual = idioma;
+}
+
+function cambiarIdioma() {
+  aplicarIdioma(idiomaActual === "es" ? "en" : "es");
 }
 
 
@@ -206,9 +206,7 @@ let menuVisible = false;
 
 function mostrarOcultarMenu() {
   const nav = document.getElementById("nav");
-
   menuVisible = !menuVisible;
-
   nav.className = menuVisible ? "responsive" : "";
 }
 
@@ -220,6 +218,10 @@ function cerrarMenu() {
 
 /* ============================================================
    5. SKILL BARS
+
+   The width comes from the data-percent attribute in index.html.
+   You can add or remove skills freely: this code does not depend
+   on how many there are.
    ============================================================ */
 
 function animarHabilidades() {
@@ -227,14 +229,9 @@ function animarHabilidades() {
 
   const mostrar = barra => {
     const porcentaje = barra.getAttribute("data-percent") || "0";
-
     barra.style.width = porcentaje + "%";
-
     const etiqueta = barra.querySelector("span");
-
-    if (etiqueta) {
-      etiqueta.textContent = porcentaje + "%";
-    }
+    if (etiqueta) etiqueta.textContent = porcentaje + "%";
   };
 
   if (!("IntersectionObserver" in window)) {
@@ -243,16 +240,12 @@ function animarHabilidades() {
   }
 
   const observador = new IntersectionObserver((entradas, obs) => {
-
     entradas.forEach(entrada => {
-
       if (entrada.isIntersecting) {
         mostrar(entrada.target);
         obs.unobserve(entrada.target);
       }
-
     });
-
   }, { threshold: 0.4 });
 
   barras.forEach(barra => observador.observe(barra));
@@ -267,4 +260,3 @@ document.addEventListener("DOMContentLoaded", () => {
   aplicarIdioma("es");
   animarHabilidades();
 });
-```
