@@ -38,7 +38,8 @@ I did not translate the sentence word for word because some expressions sound un
 
 ## Tools
 
-I used an online translator to help me create a first version of some sentences in English. I also used ChatGPT to check the grammar and make the sentences sound more natural. Finally, I compared the English text with my Spanish version to make sure that the meaning was correct.
+I used an online translator to help me create a first version of some sentences in English. I compared the English text with my Spanish version to make sure that the meaning was correct.
+
 
 ---
 
