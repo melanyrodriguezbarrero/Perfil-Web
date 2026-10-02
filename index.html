@@ -1,594 +1,351 @@
-```html
 <!DOCTYPE html>
+<!--
+  ============================================================
+  WEB PROFILE TEMPLATE  ·  Técnico Profesional en Programación Web
+  Institución Universitaria de El Espinal - UniEspinal
+  Inglés I / Inglés II
+  ============================================================
+
+  HOW TO USE THIS FILE
+  1. Replace every text inside [square brackets] with your own information.
+  2. Every visible text has a data-i18n attribute. The actual words live in
+     script.js, inside the ES and EN dictionaries. Edit them there.
+  3. Do NOT delete the data-i18n attributes. They connect this file to the
+     language switcher.
+  4. Never add your home address, your phone number or your ID number.
+     A public profile does not need them.
+  ============================================================
+-->
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MELANY RODRIGUEZ · Técnico Profesional en Programación Web</title>
+  <!-- [Replace with your name] -->
+  <title>[Your Name] · Web Developer</title>
+  <meta name="description" content="[One short line about you. Example: Junior web developer and technical support technician based in Colombia.]">
 
-    <meta name="description"
-        content="Perfil profesional de Melany Rodriguez, estudiante de Técnico Profesional en Programación Web en UniEspinal, interesada en programación, desarrollo web, bases de datos y tecnología.">
-
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- MENÚ -->
-    <header class="header">
-        <nav class="navbar">
+  <!-- ========================= HEADER ========================= -->
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <!-- [Replace with your name or a short nickname] -->
+        <a href="#inicio">[Name]</a>
+      </div>
 
-            <div class="logo">
-                MELANY RODRIGUEZ
-            </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#inicio"     data-i18n="nav.home"      onclick="cerrarMenu()">INICIO</a></li>
+          <li><a href="#sobremi"    data-i18n="nav.about"     onclick="cerrarMenu()">SOBRE MÍ</a></li>
+          <li><a href="#skills"     data-i18n="nav.skills"    onclick="cerrarMenu()">SKILLS</a></li>
+          <li><a href="#curriculum" data-i18n="nav.resume"    onclick="cerrarMenu()">FORMACIÓN</a></li>
+          <li><a href="#portfolio"  data-i18n="nav.portfolio" onclick="cerrarMenu()">PROYECTOS</a></li>
+          <li><a href="#contacto"   data-i18n="nav.contact"   onclick="cerrarMenu()">CONTACTO</a></li>
+        </ul>
+      </nav>
 
-            <ul class="nav-links">
-                <li>
-                    <a href="#inicio" data-i18n="nav_inicio">Inicio</a>
-                </li>
+      <div class="acciones-header">
+        <!-- LANGUAGE SWITCHER -->
+        <button id="btn-idioma"
+                class="btn-idioma"
+                type="button"
+                onclick="cambiarIdioma()"
+                aria-label="Switch to English">
+          <span class="idioma-activo">ES</span><span class="idioma-sep">/</span><span class="idioma-inactivo">EN</span>
+        </button>
 
-                <li>
-                    <a href="#sobre-mi" data-i18n="nav_sobre_mi">Sobre mí</a>
-                </li>
-
-                <li>
-                    <a href="#formacion" data-i18n="nav_formacion">Formación</a>
-                </li>
-
-                <li>
-                    <a href="#habilidades" data-i18n="nav_habilidades">Habilidades</a>
-                </li>
-
-                <li>
-                    <a href="#proyectos" data-i18n="nav_proyectos">Proyectos</a>
-                </li>
-
-                <li>
-                    <a href="#contacto" data-i18n="nav_contacto">Contacto</a>
-                </li>
-            </ul>
-
-            <button id="languageBtn">EN</button>
-
-        </nav>
+        <button class="nav-responsive" type="button" onclick="mostrarOcultarMenu()" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </header>
+  </div>
 
+  <!-- ========================= HERO ========================= -->
+  <section id="inicio" class="inicio">
+    <div class="contenido-banner">
+      <div class="contenedor-img">
+        <!-- [Replace profile.jpg with your own photo. Square image works best.] -->
+        <img src="images/profile.jpg" alt="Profile photo" onerror="this.style.display='none'">
+      </div>
 
-    <!-- INICIO -->
-    <section id="inicio" class="hero">
+      <!-- [Replace with your full name] -->
+      <h1>[YOUR NAME]</h1>
+      <h2 data-i18n="hero.role">Desarrollador Web · Soporte Técnico</h2>
 
-        <div class="hero-content">
+      <div class="redes">
+        <!-- [Replace the # with your real profile links. Delete the ones you do not use.] -->
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:[your.email@example.com]" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
 
-            <p class="hero-small" data-i18n="hero_small">
-                Estudiante de Técnico Profesional en Programación Web
-            </p>
+  <!-- ========================= ABOUT ========================= -->
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+      <h2 data-i18n="about.title">Sobre Mí</h2>
 
-            <h1>
-                MELANY RODRIGUEZ
-            </h1>
+      <p data-i18n="about.text">
+        [Escribe aquí dos o tres frases sobre ti.]
+      </p>
 
-            <p class="hero-description" data-i18n="hero_description">
-                Desarrollo Web · Programación · Tecnología
-            </p>
-
-            <a href="#sobre-mi" class="btn" data-i18n="hero_button">
-                Conocer más
-            </a>
-
+      <div class="fila">
+        <div class="col">
+          <h3 data-i18n="about.infoTitle">Información</h3>
+          <!--
+            SAFE FIELDS ONLY.
+            Do not add: home address, phone number, ID number, date of birth.
+          -->
+          <ul class="datos">
+            <li>
+              <strong data-i18n="about.labelLocation">Ubicación</strong>
+              <span data-i18n="about.valueLocation">[Ciudad], Colombia</span>
+            </li>
+            <li>
+              <strong data-i18n="about.labelEmail">Correo</strong>
+              <span>[your.email@example.com]</span>
+            </li>
+            <li>
+              <strong data-i18n="about.labelLanguages">Idiomas</strong>
+              <span data-i18n="about.valueLanguages">Español (nativo) · Inglés ([nivel])</span>
+            </li>
+            <li>
+              <strong data-i18n="about.labelStatus">Disponibilidad</strong>
+              <span class="destacado" data-i18n="about.valueStatus">Abierto a prácticas</span>
+            </li>
+          </ul>
         </div>
 
-    </section>
-
-
-    <!-- SOBRE MÍ -->
-    <section id="sobre-mi" class="section">
-
-        <div class="container">
-
-            <h2 data-i18n="about_title">
-                Sobre mí
-            </h2>
-
-            <div class="about-content">
-
-                <div class="about-text">
-
-                    <p data-i18n="about_text_1">
-                        Soy Melany Rodriguez, estudiante de Técnico Profesional en Programación Web en UniEspinal y actualmente curso cuarto semestre.
-                    </p>
-
-                    <p data-i18n="about_text_2">
-                        Me interesa la programación, el desarrollo web, las bases de datos y la tecnología. Durante mi formación académica he trabajado en diferentes proyectos utilizando HTML, CSS, JavaScript, PHP, MySQL y Java.
-                    </p>
-
-                    <p data-i18n="about_text_3">
-                        Me gusta aprender de manera práctica, buscar soluciones a los problemas y seguir mejorando mis conocimientos en programación y desarrollo de aplicaciones.
-                    </p>
-
-                </div>
-
-                <div class="about-info">
-
-                    <div class="info-item">
-                        <strong data-i18n="location_title">Ubicación</strong>
-                        <span>Espinal, Tolima, Colombia</span>
-                    </div>
-
-                    <div class="info-item">
-                        <strong data-i18n="email_title">Correo</strong>
-                        <span>mrodriguez99@itfip.edu.co</span>
-                    </div>
-
-                    <div class="info-item">
-                        <strong data-i18n="education_title">Formación</strong>
-                        <span>Técnico Profesional en Programación Web</span>
-                    </div>
-
-                    <div class="info-item">
-                        <strong data-i18n="semester_title">Semestre</strong>
-                        <span>Cuarto semestre · En curso</span>
-                    </div>
-
-                </div>
-
+        <div class="col">
+          <h3 data-i18n="about.interestsTitle">Intereses</h3>
+          <div class="contenedor-intereses">
+            <!-- [Change icons and labels. Keep between 4 and 6.] -->
+            <div class="interes">
+              <i class="fa-solid fa-code"></i>
+              <span data-i18n="interest.1">CÓDIGO</span>
             </div>
+            <div class="interes">
+              <i class="fa-solid fa-headset"></i>
+              <span data-i18n="interest.2">SOPORTE</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-book-open"></i>
+              <span data-i18n="interest.3">LECTURA</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-gamepad"></i>
+              <span data-i18n="interest.4">JUEGOS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ========================= SKILLS ========================= -->
+  <!--
+    To change a skill: edit the label, and edit data-percent.
+    The bar width and the number are both taken from data-percent,
+    so you only change it in ONE place.
+  -->
+  <section id="skills" class="skills">
+    <div class="contenido-seccion">
+      <h2 data-i18n="skills.title">Habilidades</h2>
+
+      <div class="fila">
+        <div class="col">
+          <h3 data-i18n="skills.technical">Habilidades técnicas</h3>
+
+          <div class="skill">
+            <span class="skill-nombre">HTML &amp; CSS</span>
+            <div class="barra-skill"><div class="progreso" data-percent="70"><span>70%</span></div></div>
+          </div>
+          <div class="skill">
+            <span class="skill-nombre">JavaScript</span>
+            <div class="barra-skill"><div class="progreso" data-percent="55"><span>55%</span></div></div>
+          </div>
+          <div class="skill">
+            <span class="skill-nombre">MySQL</span>
+            <div class="barra-skill"><div class="progreso" data-percent="45"><span>45%</span></div></div>
+          </div>
+          <div class="skill">
+            <span class="skill-nombre">Git &amp; GitHub</span>
+            <div class="barra-skill"><div class="progreso" data-percent="60"><span>60%</span></div></div>
+          </div>
         </div>
 
-    </section>
+        <div class="col">
+          <h3 data-i18n="skills.professional">Habilidades profesionales</h3>
 
+          <div class="skill">
+            <span class="skill-nombre" data-i18n="skill.support">Soporte al usuario</span>
+            <div class="barra-skill"><div class="progreso" data-percent="80"><span>80%</span></div></div>
+          </div>
+          <div class="skill">
+            <span class="skill-nombre" data-i18n="skill.teamwork">Trabajo en equipo</span>
+            <div class="barra-skill"><div class="progreso" data-percent="85"><span>85%</span></div></div>
+          </div>
+          <div class="skill">
+            <span class="skill-nombre" data-i18n="skill.problem">Resolución de problemas</span>
+            <div class="barra-skill"><div class="progreso" data-percent="75"><span>75%</span></div></div>
+          </div>
+          <div class="skill">
+            <span class="skill-nombre" data-i18n="skill.english">Inglés técnico</span>
+            <div class="barra-skill"><div class="progreso" data-percent="65"><span>65%</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- FORMACIÓN -->
-    <section id="formacion" class="section">
+  <!-- ========================= RESUME ========================= -->
+  <section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+      <h2 data-i18n="resume.title">Formación y experiencia</h2>
 
-        <div class="container">
+      <div class="fila">
+        <!-- EDUCATION -->
+        <div class="col izquierda">
+          <h3 data-i18n="resume.education">Formación</h3>
 
-            <h2 data-i18n="education_main_title">
-                Formación
-            </h2>
+          <div class="item izq">
+            <h4 data-i18n="edu.1.title">Técnico Profesional en Programación Web</h4>
+            <span class="casa">UniEspinal</span>
+            <span class="fecha">[2025 - 2027]</span>
+            <p data-i18n="edu.1.text">[Una o dos frases sobre lo que aprendes aquí.]</p>
+            <div class="conectori"><div class="circuloi"></div></div>
+          </div>
 
-            <div class="education-card">
-
-                <h3>
-                    Técnico Profesional en Programación Web
-                </h3>
-
-                <h4>
-                    Institución Universitaria de El Espinal - UniEspinal
-                </h4>
-
-                <p data-i18n="education_description">
-                    Actualmente curso cuarto semestre, fortaleciendo mis conocimientos en programación, bases de datos, desarrollo web, programación orientada a objetos y redes.
-                </p>
-
-                <span class="date">
-                    Actualmente · Cuarto semestre
-                </span>
-
-            </div>
-
-            <div class="education-card">
-
-                <h3>
-                    Desarrollo Web
-                </h3>
-
-                <h4>
-                    Formación académica
-                </h4>
-
-                <p data-i18n="web_education_description">
-                    He desarrollado diferentes proyectos académicos relacionados con HTML, CSS, JavaScript, PHP, MySQL y desarrollo de aplicaciones web.
-                </p>
-
-            </div>
-
+          <div class="item izq">
+            <h4 data-i18n="edu.2.title">[Curso o certificación]</h4>
+            <span class="casa">[Institución]</span>
+            <span class="fecha">[Año]</span>
+            <p data-i18n="edu.2.text">[Qué aprendiste y para qué te sirve.]</p>
+            <div class="conectori"><div class="circuloi"></div></div>
+          </div>
         </div>
 
-    </section>
+        <!-- EXPERIENCE -->
+        <div class="col derecha">
+          <h3 data-i18n="resume.experience">Experiencia</h3>
 
+          <!--
+            No work experience yet? That is normal.
+            Use academic projects, volunteer work or freelance jobs.
+            Describe what you DID, using action verbs: built, configured, fixed, tested.
+          -->
+          <div class="item der">
+            <h4 data-i18n="exp.1.title">[Rol o tipo de proyecto]</h4>
+            <span class="casa">[Empresa, institución o proyecto propio]</span>
+            <span class="fecha">[Año]</span>
+            <p data-i18n="exp.1.text">[Qué hiciste, con qué herramientas y qué resultado tuvo.]</p>
+            <div class="conectord"><div class="circulod"></div></div>
+          </div>
 
-    <!-- HABILIDADES -->
-    <section id="habilidades" class="section">
-
-        <div class="container">
-
-            <h2 data-i18n="skills_title">
-                Habilidades
-            </h2>
-
-
-            <div class="skills-container">
-
-                <div class="skills-column">
-
-                    <h3 data-i18n="technical_title">
-                        Habilidades técnicas
-                    </h3>
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>HTML & CSS</span>
-                            <span>70%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>JavaScript</span>
-                            <span>55%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 55%;"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>PHP</span>
-                            <span>60%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%;"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>MySQL</span>
-                            <span>55%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 55%;"></div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="skills-column">
-
-                    <h3 data-i18n="professional_title">
-                        Habilidades personales
-                    </h3>
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span data-i18n="teamwork">Trabajo en equipo</span>
-                            <span>85%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span data-i18n="problem_solving">Resolución de problemas</span>
-                            <span>80%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span data-i18n="learning">Aprendizaje continuo</span>
-                            <span>90%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span data-i18n="english_skill">Inglés</span>
-                            <span>60%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%;"></div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- INTERESES -->
-            <div class="interests">
-
-                <h3 data-i18n="interests_title">
-                    Áreas de interés
-                </h3>
-
-                <div class="interest-list">
-
-                    <span>PROGRAMACIÓN</span>
-                    <span>DESARROLLO WEB</span>
-                    <span>BASES DE DATOS</span>
-                    <span>TECNOLOGÍA</span>
-
-                </div>
-
-            </div>
-
+          <div class="item der">
+            <h4 data-i18n="exp.2.title">[Rol o tipo de proyecto]</h4>
+            <span class="casa">[Empresa, institución o proyecto propio]</span>
+            <span class="fecha">[Año]</span>
+            <p data-i18n="exp.2.text">[Qué hiciste, con qué herramientas y qué resultado tuvo.]</p>
+            <div class="conectord"><div class="circulod"></div></div>
+          </div>
         </div>
-
-    </section>
-
-
-    <!-- EXPERIENCIA -->
-    <section id="experiencia" class="section">
-
-        <div class="container">
-
-            <h2 data-i18n="experience_title">
-                Experiencia
-            </h2>
-
-            <div class="experience-card">
-
-                <h3 data-i18n="experience_project">
-                    Desarrollo de proyectos académicos
-                </h3>
-
-                <p data-i18n="experience_description">
-                    Durante mi formación académica he participado en diferentes proyectos relacionados con programación, desarrollo web, bases de datos, programación orientada a objetos y aplicaciones de escritorio.
-                </p>
-
-                <p>
-                    HTML · CSS · JavaScript · PHP · MySQL · Java · Git · GitHub
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="section">
-
-        <div class="container">
-
-            <h2 data-i18n="projects_title">
-                Proyectos
-            </h2>
-
-
-            <div class="projects-grid">
-
-
-                <!-- PROYECTO 1 -->
-                <div class="project-card">
-
-                    <div class="project-content">
-
-                        <h3>
-                            Sistema Web de Notas y Asistencias
-                        </h3>
-
-                        <p data-i18n="project_notes">
-                            Plataforma web académica desarrollada para gestionar notas y asistencias, permitiendo organizar la información de estudiantes, actividades, calificaciones e inasistencias.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROYECTO 2 -->
-                <div class="project-card">
-
-                    <div class="project-content">
-
-                        <h3>
-                            Figuras Geométricas
-                        </h3>
-
-                        <p data-i18n="project_figures">
-                            Aplicación desarrollada en PHP utilizando programación orientada a objetos para calcular áreas, perímetros y volúmenes de diferentes figuras geométricas.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>PHP</span>
-                            <span>POO</span>
-                            <span>Herencia</span>
-                            <span>Polimorfismo</span>
-                            <span>Encapsulamiento</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROYECTO 3 -->
-                <div class="project-card">
-
-                    <div class="project-content">
-
-                        <h3>
-                            Aplicaciones Java
-                        </h3>
-
-                        <p data-i18n="project_java">
-                            Desarrollo de aplicaciones de escritorio utilizando Java y Swing en Eclipse, trabajando con interfaces gráficas, eventos, formularios, cálculos y validación de información.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Java</span>
-                            <span>Swing</span>
-                            <span>Eclipse</span>
-                            <span>POO</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- IDIOMAS -->
-    <section id="idiomas" class="section">
-
-        <div class="container">
-
-            <h2 data-i18n="languages_title">
-                Idiomas
-            </h2>
-
-            <div class="languages">
-
-                <div class="language-card">
-
-                    <h3 data-i18n="spanish">
-                        Español
-                    </h3>
-
-                    <p data-i18n="native">
-                        Nativo
-                    </p>
-
-                </div>
-
-
-                <div class="language-card">
-
-                    <h3>
-                        Inglés
-                    </h3>
-
-                    <p data-i18n="basic_intermediate">
-                        Básico - Intermedio
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="section contact-section">
-
-        <div class="container">
-
-            <h2 data-i18n="contact_title">
-                Contacto
-            </h2>
-
-            <p data-i18n="contact_description">
-                Si deseas conocer más sobre mis proyectos o mi formación académica, puedes contactarme por medio de mi correo electrónico.
-            </p>
-
-
-            <div class="contact-info">
-
-                <div class="contact-item">
-
-                    <strong data-i18n="email_title">
-                        Correo electrónico
-                    </strong>
-
-                    <a href="mailto:mrodriguez99@itfip.edu.co">
-                        mrodriguez99@itfip.edu.co
-                    </a>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <strong>
-                        GitHub
-                    </strong>
-
-                    <a href="#" target="_blank">
-                        Perfil de GitHub
-                    </a>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <strong>
-                        LinkedIn
-                    </strong>
-
-                    <a href="#" target="_blank">
-                        Perfil de LinkedIn
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <div class="container">
-
-            <p>
-                MELANY RODRIGUEZ · Técnico Profesional en Programación Web · UniEspinal
-            </p>
-
-            <p>
-                © 2026 Melany Rodriguez
-            </p>
-
-        </div>
-
-    </footer>
-
-
-    <script src="script.js"></script>
-
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= PORTFOLIO ========================= -->
+  <!--
+    This is the most important section for a junior developer.
+    Three finished small projects are better than ten unfinished ones.
+    Every card should link to the live project or to its repository.
+  -->
+  <section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+      <h2 data-i18n="portfolio.title">Proyectos</h2>
+
+      <div class="galeria">
+        <a class="proyecto" href="#" target="_blank" rel="noopener">
+          <img src="images/project-1.png" alt="Project 1" onerror="this.style.opacity=0">
+          <div class="overlay">
+            <h3 data-i18n="project.1.title">[Nombre del proyecto]</h3>
+            <p data-i18n="project.1.text">[Tecnologías usadas]</p>
+          </div>
+        </a>
+
+        <a class="proyecto" href="#" target="_blank" rel="noopener">
+          <img src="images/project-2.png" alt="Project 2" onerror="this.style.opacity=0">
+          <div class="overlay">
+            <h3 data-i18n="project.2.title">[Nombre del proyecto]</h3>
+            <p data-i18n="project.2.text">[Tecnologías usadas]</p>
+          </div>
+        </a>
+
+        <a class="proyecto" href="#" target="_blank" rel="noopener">
+          <img src="images/project-3.png" alt="Project 3" onerror="this.style.opacity=0">
+          <div class="overlay">
+            <h3 data-i18n="project.3.title">[Nombre del proyecto]</h3>
+            <p data-i18n="project.3.text">[Tecnologías usadas]</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CONTACT ========================= -->
+  <!--
+    A contact form needs a server to work. This template uses direct links
+    instead, so nothing here is decorative: every button really does something.
+  -->
+  <section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+      <h2 data-i18n="contact.title">Contacto</h2>
+      <p class="contacto-intro" data-i18n="contact.intro">
+        [Una frase invitando a escribirte.]
+      </p>
+
+      <div class="tarjetas-contacto">
+        <a class="tarjeta" href="mailto:[your.email@example.com]">
+          <i class="fa-solid fa-envelope"></i>
+          <strong data-i18n="contact.emailLabel">Correo</strong>
+          <span>[your.email@example.com]</span>
+        </a>
+
+        <a class="tarjeta" href="#" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+          <strong>GitHub</strong>
+          <span>[github.com/tu-usuario]</span>
+        </a>
+
+        <a class="tarjeta" href="#" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <strong>LinkedIn</strong>
+          <span data-i18n="contact.linkedinValue">[Tu perfil profesional]</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer>
+    <a href="#inicio" class="arriba" aria-label="Back to top">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <p class="footer-nota" data-i18n="footer.note">
+      [Tu nombre] · Técnico Profesional en Programación Web · UniEspinal
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-```
