@@ -4,29 +4,26 @@ const ES = {
     "nav.about": "SOBRE MÍ",
     "nav.skills": "HABILIDADES",
     "nav.resume": "FORMACIÓN",
-    "nav.portfolio": "PORTAFOLIO",
+    "nav.portfolio": "PROYECTOS",
     "nav.contact": "CONTACTO",
 
-    "hero.role": "Técnico Profesional en Programación Web · Desarrollo Web",
+    "hero.role": "Técnico Profesional en Programación Web",
 
     "about.title": "Sobre Mí",
 
-    "about.text": "Soy estudiante de Técnico Profesional en Programación Web en UniEspinal y actualmente curso cuarto semestre. Me interesa el desarrollo web, las bases de datos y la creación de soluciones tecnológicas mediante proyectos académicos.",
+    "about.text": "Soy estudiante de Técnico Profesional en Programación Web y actualmente curso cuarto semestre en UniEspinal. Me considero una persona responsable, comprometida y con interés por seguir aprendiendo sobre tecnología y desarrollo web. Me gusta aprender mediante la práctica y mejorar mis conocimientos a través de las actividades y experiencias de mi formación.",
 
     "about.infoTitle": "Información",
 
     "about.labelLocation": "Ubicación",
-
     "about.valueLocation": "Espinal, Tolima, Colombia",
 
-    "about.labelEmail": "Email",
+    "about.labelEmail": "Correo",
 
     "about.labelLanguages": "Idiomas",
-
     "about.valueLanguages": "Español (nativo) · Inglés (en formación)",
 
     "about.labelStatus": "Disponibilidad",
-
     "about.valueStatus": "Disponible para prácticas",
 
     "about.interestsTitle": "Intereses",
@@ -34,7 +31,7 @@ const ES = {
     "interest.1": "PROGRAMACIÓN",
     "interest.2": "DESARROLLO WEB",
     "interest.3": "BASES DE DATOS",
-    "interest.4": "TECNOLOGÍA",
+    "interest.4": "APRENDIZAJE",
 
     "skills.title": "Habilidades",
 
@@ -47,47 +44,44 @@ const ES = {
     "skill.problem": "Resolución de problemas",
     "skill.english": "Aprendizaje continuo",
 
-    "resume.title": "Formación y proyectos",
+    "resume.title": "Formación y experiencia",
 
-    "resume.education": "Formación académica",
-
-    "resume.experience": "Proyectos académicos",
+    "resume.education": "Formación",
 
     "edu.1.title": "Técnico Profesional en Programación Web",
 
-    "edu.1.text": "Formación en desarrollo web, programación, bases de datos, programación orientada a objetos y herramientas de desarrollo. Actualmente curso cuarto semestre en UniEspinal.",
+    "edu.1.text": "Formación en programación, desarrollo web, bases de datos, programación orientada a objetos, diseño de interfaces y herramientas tecnológicas. Durante la carrera he desarrollado diferentes actividades prácticas para fortalecer mis conocimientos.",
 
-    "edu.2.title": "Formación complementaria en desarrollo y tecnología",
+    "edu.2.title": "Formación práctica en tecnología",
 
-    "edu.2.text": "Práctica académica en Java Swing, PHP, MySQL, Git/GitHub y fundamentos de redes con Cisco Packet Tracer.",
+    "edu.2.text": "He fortalecido mis conocimientos mediante prácticas de programación en Java, PHP, HTML, CSS y JavaScript, además del manejo de bases de datos MySQL y herramientas como Eclipse y GitHub.",
 
-    "exp.1.title": "Desarrollo de proyectos académicos",
+    "resume.experience": "Experiencia",
 
-    "exp.1.text": "Desarrollé aplicaciones web y de escritorio usando PHP, MySQL, HTML, CSS, JavaScript y Java Swing, aplicando validaciones, estructuras de programación y orientación a objetos.",
+    "exp.1.title": "Experiencia académica en programación",
 
-    "exp.2.title": "Prácticas de bases de datos y redes",
+    "exp.1.text": "Durante mi formación he realizado diferentes ejercicios y proyectos académicos relacionados con programación, desarrollo web y bases de datos. Estas actividades me han permitido practicar la lógica, trabajar con diferentes herramientas y aprender de los errores.",
 
-    "exp.2.text": "Diseñé y probé bases de datos en MySQL y realicé prácticas de direccionamiento, subnetting y enrutamiento estático en Cisco Packet Tracer.",
+    "exp.2.title": "Práctica con herramientas tecnológicas",
 
-    "portfolio.title": "Portafolio",
+    "exp.2.text": "He trabajado con diferentes herramientas de desarrollo y tecnología, incluyendo Eclipse, MySQL, GitHub y Cisco Packet Tracer. También he realizado prácticas de interfaces gráficas, bases de datos, redes y programación orientada a objetos.",
+
+    "portfolio.title": "Proyectos",
 
     "project.1.title": "Sistema Web de Notas y Asistencias",
-
-    "project.1.text": "PHP · MySQL · HTML · CSS · JavaScript · XP",
+    "project.1.text": "PHP · MySQL · HTML · CSS · JavaScript",
 
     "project.2.title": "Figuras Geométricas",
-
-    "project.2.text": "PHP · POO · Herencia · Polimorfismo · Encapsulamiento",
+    "project.2.text": "PHP · Programación Orientada a Objetos",
 
     "project.3.title": "Aplicaciones Java Swing",
-
-    "project.3.text": "Java · Swing · Eclipse · Interfaces gráficas · Validaciones",
+    "project.3.text": "Java · Eclipse · Interfaces gráficas",
 
     "contact.title": "Contacto",
 
-    "contact.intro": "Si quieres conocer más sobre mis proyectos académicos o mi formación en programación web, puedes escribirme.",
+    "contact.intro": "Si quieres conocer más sobre mi formación, mis intereses o los proyectos que he realizado durante mi carrera, puedes comunicarte conmigo a través de mi correo electrónico.",
 
-    "contact.emailLabel": "Email",
+    "contact.emailLabel": "Correo",
 
     "contact.linkedinValue": "Perfil profesional",
 
@@ -101,29 +95,26 @@ const EN = {
     "nav.about": "ABOUT ME",
     "nav.skills": "SKILLS",
     "nav.resume": "EDUCATION",
-    "nav.portfolio": "PORTFOLIO",
+    "nav.portfolio": "PROJECTS",
     "nav.contact": "CONTACT",
 
-    "hero.role": "Web Programming Student · Web Development",
+    "hero.role": "Professional Technician in Web Programming",
 
     "about.title": "About Me",
 
-    "about.text": "I am a Web Programming student at UniEspinal, currently in my fourth semester. I am interested in web development, databases, and building technology solutions through academic projects.",
+    "about.text": "I am a Web Programming student currently in my fourth semester at UniEspinal. I consider myself a responsible and committed person with an interest in continuing to learn about technology and web development. I enjoy learning through practice and improving my knowledge through the activities and experiences of my academic training.",
 
     "about.infoTitle": "Information",
 
     "about.labelLocation": "Location",
-
     "about.valueLocation": "Espinal, Tolima, Colombia",
 
     "about.labelEmail": "Email",
 
     "about.labelLanguages": "Languages",
-
     "about.valueLanguages": "Spanish (native) · English (in training)",
 
     "about.labelStatus": "Availability",
-
     "about.valueStatus": "Open to internships",
 
     "about.interestsTitle": "Interests",
@@ -131,7 +122,7 @@ const EN = {
     "interest.1": "PROGRAMMING",
     "interest.2": "WEB DEVELOPMENT",
     "interest.3": "DATABASES",
-    "interest.4": "TECHNOLOGY",
+    "interest.4": "LEARNING",
 
     "skills.title": "Skills",
 
@@ -144,45 +135,42 @@ const EN = {
     "skill.problem": "Problem solving",
     "skill.english": "Continuous learning",
 
-    "resume.title": "Education and projects",
+    "resume.title": "Education and experience",
 
-    "resume.education": "Academic education",
-
-    "resume.experience": "Academic projects",
+    "resume.education": "Education",
 
     "edu.1.title": "Professional Technician in Web Programming",
 
-    "edu.1.text": "Training in web development, programming, databases, object-oriented programming, and development tools. Currently in my fourth semester at UniEspinal.",
+    "edu.1.text": "Training in programming, web development, databases, object-oriented programming, interface design, and technology tools. During my studies, I have completed different practical activities to strengthen my knowledge.",
 
-    "edu.2.title": "Additional training in development and technology",
+    "edu.2.title": "Practical training in technology",
 
-    "edu.2.text": "Academic practice with Java Swing, PHP, MySQL, Git/GitHub, and networking fundamentals using Cisco Packet Tracer.",
+    "edu.2.text": "I have strengthened my knowledge through programming practice with Java, PHP, HTML, CSS, and JavaScript, as well as MySQL databases and tools such as Eclipse and GitHub.",
 
-    "exp.1.title": "Academic project development",
+    "resume.experience": "Experience",
 
-    "exp.1.text": "Built web and desktop applications using PHP, MySQL, HTML, CSS, JavaScript, and Java Swing, applying validation, programming structures, and object-oriented programming.",
+    "exp.1.title": "Academic experience in programming",
 
-    "exp.2.title": "Database and networking practice",
+    "exp.1.text": "During my studies, I have completed different exercises and academic projects related to programming, web development, and databases. These activities have allowed me to practice programming logic, work with different tools, and learn from my mistakes.",
 
-    "exp.2.text": "Designed and tested MySQL databases and practiced addressing, subnetting, and static routing in Cisco Packet Tracer.",
+    "exp.2.title": "Practice with technology tools",
 
-    "portfolio.title": "Portfolio",
+    "exp.2.text": "I have worked with different development and technology tools, including Eclipse, MySQL, GitHub, and Cisco Packet Tracer. I have also practiced graphical interfaces, databases, networking, and object-oriented programming.",
+
+    "portfolio.title": "Projects",
 
     "project.1.title": "Grades and Attendance Web System",
-
-    "project.1.text": "PHP · MySQL · HTML · CSS · JavaScript · XP",
+    "project.1.text": "PHP · MySQL · HTML · CSS · JavaScript",
 
     "project.2.title": "Geometric Shapes",
-
-    "project.2.text": "PHP · OOP · Inheritance · Polymorphism · Encapsulation",
+    "project.2.text": "PHP · Object-Oriented Programming",
 
     "project.3.title": "Java Swing Applications",
-
-    "project.3.text": "Java · Swing · Eclipse · GUI · Validation",
+    "project.3.text": "Java · Eclipse · Graphical interfaces",
 
     "contact.title": "Contact",
 
-    "contact.intro": "If you would like to learn more about my academic projects or my training in web programming, feel free to contact me.",
+    "contact.intro": "If you would like to know more about my education, interests, or the projects I have completed during my studies, you can contact me by email.",
 
     "contact.emailLabel": "Email",
 
@@ -190,132 +178,3 @@ const EN = {
 
     "footer.note": "Melany Rodriguez · Professional Technician in Web Programming · UniEspinal"
 };
-
-
-const DICCIONARIOS = {
-    es: ES,
-    en: EN
-};
-
-
-let idiomaActual = "es";
-
-
-function aplicarIdioma(idioma) {
-
-    const diccionario = DICCIONARIOS[idioma];
-
-    document.documentElement.lang = idioma;
-
-    const elementos = document.querySelectorAll("[data-i18n]");
-
-    elementos.forEach(function(elemento) {
-
-        const clave = elemento.getAttribute("data-i18n");
-
-        if (diccionario[clave]) {
-            elemento.textContent = diccionario[clave];
-        }
-
-    });
-
-
-    const botonIdioma = document.getElementById("btn-idioma");
-
-    if (botonIdioma) {
-
-        if (idioma === "es") {
-            botonIdioma.textContent = "EN";
-        } else {
-            botonIdioma.textContent = "ES";
-        }
-
-    }
-
-}
-
-
-function cambiarIdioma() {
-
-    if (idiomaActual === "es") {
-        idiomaActual = "en";
-    } else {
-        idiomaActual = "es";
-    }
-
-    aplicarIdioma(idiomaActual);
-
-}
-
-
-function abrirMenu() {
-
-    const nav = document.getElementById("nav");
-
-    if (nav) {
-        nav.classList.toggle("responsive");
-    }
-
-}
-
-
-function cerrarMenu() {
-
-    const nav = document.getElementById("nav");
-
-    if (nav) {
-        nav.classList.remove("responsive");
-    }
-
-}
-
-
-function animarHabilidades() {
-
-    const habilidades = document.querySelectorAll(".progreso");
-
-    habilidades.forEach(function(habilidad) {
-
-        const porcentaje = habilidad.getAttribute("data-percent");
-
-        habilidad.style.width = porcentaje + "%";
-
-    });
-
-}
-
-
-document.addEventListener("DOMContentLoaded", function() {
-
-    aplicarIdioma("es");
-
-    const botonIdioma = document.getElementById("btn-idioma");
-
-    if (botonIdioma) {
-
-        botonIdioma.addEventListener("click", cambiarIdioma);
-
-    }
-
-
-    const botonMenu = document.querySelector(".nav-responsive");
-
-    if (botonMenu) {
-
-        botonMenu.addEventListener("click", abrirMenu);
-
-    }
-
-
-    const enlaces = document.querySelectorAll("#nav a");
-
-    enlaces.forEach(function(enlace) {
-
-        enlace.addEventListener("click", cerrarMenu);
-
-    });
-
-
-    animarHabilidades();
-
-});
