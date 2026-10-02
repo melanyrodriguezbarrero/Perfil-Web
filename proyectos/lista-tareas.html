@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de tareas</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+
+            background-color: #f4f6f8;
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            padding: 50px 20px;
+
+            box-sizing: border-box;
+        }
+
+
+        .contenedor {
+
+            background-color: white;
+
+            width: 100%;
+
+            max-width: 550px;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 4px 15px #cccccc;
+        }
+
+
+        h1 {
+
+            text-align: center;
+
+        }
+
+
+        .formulario {
+
+            display: flex;
+
+            gap: 10px;
+        }
+
+
+        input[type="text"] {
+
+            flex: 1;
+
+            padding: 12px;
+
+            border: 1px solid #cccccc;
+
+            border-radius: 8px;
+
+            font-size: 16px;
+        }
+
+
+        button {
+
+            padding: 12px 18px;
+
+            border: none;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            background-color: #dddddd;
+        }
+
+
+        .agregar {
+
+            background-color: #b8e0c0;
+
+        }
+
+
+        ul {
+
+            list-style: none;
+
+            padding: 0;
+        }
+
+
+        li {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 12px;
+
+            margin: 8px 0;
+
+            background-color: #f5f5f5;
+
+            border-radius: 8px;
+        }
+
+
+        li span {
+
+            flex: 1;
+
+        }
+
+
+        .completada span {
+
+            text-decoration: line-through;
+
+            opacity: 0.6;
+        }
+
+
+        .eliminar {
+
+            padding: 7px 10px;
+
+            background-color: #ffd0d0;
+        }
+
+
+        .volver {
+
+            display: block;
+
+            text-align: center;
+
+            margin-top: 20px;
+
+            text-decoration: none;
+
+            color: #333333;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="contenedor">
+
+        <h1>Lista de tareas</h1>
+
+
+        <div class="formulario">
+
+            <input
+                type="text"
+                id="tarea"
+                placeholder="Escribe una tarea"
+            >
+
+            <button
+                class="agregar"
+                onclick="agregarTarea()"
+            >
+                Agregar
+            </button>
+
+        </div>
+
+
+        <ul id="lista"></ul>
+
+
+        <a
+            class="volver"
+            href="../index.html"
+        >
+            ← Volver al portafolio
+        </a>
+
+    </div>
+
+
+    <script>
+
+        const entrada = document.getElementById("tarea");
+
+        const lista = document.getElementById("lista");
+
+
+        function agregarTarea() {
+
+            let texto = entrada.value.trim();
+
+
+            if (texto == "") {
+
+                return;
+
+            }
+
+
+            let li = document.createElement("li");
+
+
+            let check = document.createElement("input");
+
+            check.type = "checkbox";
+
+
+            let span = document.createElement("span");
+
+            span.textContent = texto;
+
+
+            check.addEventListener("change", function() {
+
+                li.classList.toggle(
+                    "completada",
+                    check.checked
+                );
+
+            });
+
+
+            let eliminar = document.createElement("button");
+
+            eliminar.textContent = "Eliminar";
+
+            eliminar.className = "eliminar";
+
+
+            eliminar.addEventListener("click", function() {
+
+                li.remove();
+
+            });
+
+
+            li.appendChild(check);
+
+            li.appendChild(span);
+
+            li.appendChild(eliminar);
+
+
+            lista.appendChild(li);
+
+
+            entrada.value = "";
+
+            entrada.focus();
+
+        }
+
+
+        entrada.addEventListener("keydown", function(evento) {
+
+            if (evento.key == "Enter") {
+
+                agregarTarea();
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
