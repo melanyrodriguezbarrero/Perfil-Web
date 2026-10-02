@@ -1,82 +1,53 @@
 # Translation Notes
 
-**Student:** [Your name]
-**Course:** [Inglés I / Inglés II]
-**Date:** [dd/mm/yyyy]
+**Student:** Melany Rodriguez  
+**Course:** English II  
+**Date:** 01/10/2026
 
 ---
 
 ## Why this file exists
 
-Your Spanish profile and your English profile are **not** the same text in two
-languages. They are two different documents for two different readers.
-
-Some examples of what changes:
-
-- A Colombian *hoja de vida* often includes a photo, an ID number, an address
-  and a date of birth. An English CV or profile does not. In many countries
-  this information is removed on purpose, because of anti-discrimination law.
-- Spanish professional writing often uses nouns: *"Manejo de bases de datos
-  relacionales."* English uses action verbs: *"Built and maintained relational
-  databases."*
-- Some technical words are never translated. Nobody writes *"marco de trabajo
-  JavaScript del lado del cliente"*. We write *framework*.
-
-This file is where you show that you understood those differences.
+My Spanish and English profiles are not exactly the same text. I adapted some information and expressions so that the English version sounds more natural and appropriate for a professional profile.
 
 ---
 
-## Question 1 · What did you leave out?
+## Question 1 · What did you omit?
 
-Name **one thing** that appears in your Spanish version and does **not** appear
-in your English version. Explain why you removed it.
-
-> [Write 2–4 sentences in English.]
+I omitted personal information such as my home address, phone number, identification number, and date of birth. I removed this information because it is not necessary in a professional web profile and it helps protect my privacy. My English profile focuses more on my education, skills, interests, and projects.
 
 ---
 
 ## Question 2 · What did you not translate?
 
-Name **one technical term** that you kept in English in both versions.
-Explain why translating it would be a bad idea.
-
-> [Write 2–4 sentences in English.]
+I kept technical terms such as JavaScript in English in both versions. JavaScript is the standard name of the programming language, so translating it would make the information less clear. I also kept names such as GitHub and MySQL because they are proper names of technologies and platforms.
 
 ---
 
 ## Question 3 · What was difficult?
 
-Name **one sentence** that was hard to write in English. Copy the Spanish
-version and your English version. Explain what you changed and why a
-word-by-word translation did not work.
+One sentence that was difficult to translate was:
 
-> Spanish: [copy your sentence here]
->
-> English: [copy your sentence here]
->
-> [Write 2–4 sentences in English explaining the change.]
+**Spanish:** Me gusta aprender mediante la práctica y mejorar mis conocimientos a través de las actividades y experiencias de mi formación.
+
+**English:** I enjoy learning through practice and improving my knowledge through the activities and experiences of my education.
+
+I did not translate the sentence word for word because some expressions sound unnatural in English. I changed the structure to make the sentence clearer and more natural for an English-speaking reader.
 
 ---
 
 ## Tools
 
-You may use dictionaries, translators and AI tools. But you must say so here.
-
-**Which tools did you use, and for what?**
-
-> [Write your answer in English. Be specific. For example: "I used
-> Cambridge Dictionary to check the difference between *develop* and
-> *design*." Or: "I used a translator for a first version of the About
-> section, and then I rewrote it because it sounded too formal."]
+I used an online translator to help me create a first version of some sentences in English. I also used ChatGPT to check the grammar and make the sentences sound more natural. Finally, I compared the English text with my Spanish version to make sure that the meaning was correct.
 
 ---
 
-## Self-check before you submit
+## Self-evaluation before submitting
 
-- [ ] Both dictionaries in `script.js` have the same keys.
-- [ ] No `[square brackets]` are left in the page.
-- [ ] My page has no address, no phone number and no ID number.
-- [ ] The language button works in both directions.
-- [ ] All my links open the correct page.
-- [ ] I read my English text out loud and it sounds natural to me.
-- [ ] I can explain my profile in English, without reading it.
+- Both dictionaries in `script.js` have the same keys.
+- There are no `[square brackets]` left on the page.
+- My page does not include my address, phone number, or identification number.
+- The language button works in both directions.
+- All my project links open the correct page.
+- I read my English text aloud and it sounds natural.
+- I can explain my profile in English without reading it.
